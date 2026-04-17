@@ -33,7 +33,7 @@ ashita.events.register('d3d_present', 'present_cb', function ()
     if not visible[1] then return end 
 
     imgui.SetNextWindowBgAlpha(0.8)
-    imgui.SetNextWindowSizeConstraints({ 200, 200, }, { 800, 800, })
+    imgui.SetNextWindowSizeConstraints({ 100, 50, }, { 800, 800, })
     if(imgui.Begin('Freedom', visible, gui_flags)) then
         local mgr = AshitaCore:GetMemoryManager():GetEntity()
         for i = 0, 0x700 do
